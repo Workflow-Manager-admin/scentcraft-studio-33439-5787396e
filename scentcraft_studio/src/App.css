@@ -16,6 +16,21 @@
 /* Marvelous Font Duo import (via Bunny Fonts CDN, which provides both script and sans components) */
 @import url('https://fonts.googleapis.com/css2?family=Marvelous+Font+Duo:ital,wght@0,400;1,400&display=swap');
 
+/* BEAUTIFUL DREAM FONT: Self-hosted title font for all h1, h2, .title classes. */
+/* 
+  UNCOMMENT this block if you have placed BeautifulDream.woff2 / .woff into src/assets/fonts.
+  See README.md "Title Font" instructions.
+
+@font-face {
+  font-family: 'Beautiful Dream';
+  src: url('./assets/fonts/BeautifulDream.woff2') format('woff2'),
+       url('./assets/fonts/BeautifulDream.woff') format('woff');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+*/
+
 /* Beautiful Dream font import (webfont for titles) */
 @import url('https://fonts.googleapis.com/css2?family=Beautiful+Dream&display=swap');
 
