@@ -40,7 +40,7 @@ function ScentSelectionStep({ scentOptions, selectedScents, onChange, onNext }) 
         }
         .scent-chip {
           background: #182a4e;
-          color: var(--floral-accent);
+          color: #fff;
           border: 2px solid var(--floral-accent);
           border-radius: 20px;
           padding: 8px 18px;

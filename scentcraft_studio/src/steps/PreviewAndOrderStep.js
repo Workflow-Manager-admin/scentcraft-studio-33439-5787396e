@@ -48,7 +48,7 @@ function PreviewAndOrderStep({
       <style>{`
         .summary-box {
           background: #151e2c;
-          color: var(--floral-accent);
+          color: #fff;
           border: 2px solid var(--floral-accent);
           border-radius: 12px;
           padding: 22px 26px;
