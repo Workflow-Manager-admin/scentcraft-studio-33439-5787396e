@@ -97,6 +97,13 @@ code, pre, .code {
   font-family: 'Dancing Script', 'Pacifico', cursive, system-ui, Arial, Helvetica, sans-serif !important;
   letter-spacing: 1px;
   font-weight: 700;
+  background-image: linear-gradient(90deg, #ee2034 0%, #304ede 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  /* Ensure correct stacking for background and font */
+  display: inline-block;
 }
 
 /* Remove font-family from .logo-symbol serif, use Marvelous for all */
