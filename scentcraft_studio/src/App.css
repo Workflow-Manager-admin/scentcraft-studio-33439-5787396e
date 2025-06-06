@@ -92,6 +92,13 @@ code, pre, .code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
 
+/* --- ScentCraft Studio branding logo title: Dancing Script only for .sc-logo-title --- */
+.sc-logo-title {
+  font-family: 'Dancing Script', 'Pacifico', cursive, system-ui, Arial, Helvetica, sans-serif !important;
+  letter-spacing: 1px;
+  font-weight: 700;
+}
+
 /* Remove font-family from .logo-symbol serif, use Marvelous for all */
 
 .app {
