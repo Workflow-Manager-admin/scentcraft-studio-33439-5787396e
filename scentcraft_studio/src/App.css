@@ -16,23 +16,17 @@
 /* Marvelous Font Duo import (via Bunny Fonts CDN, which provides both script and sans components) */
 @import url('https://fonts.googleapis.com/css2?family=Marvelous+Font+Duo:ital,wght@0,400;1,400&display=swap');
 
-/* BEAUTIFUL DREAM FONT: Self-hosted title font for all h1, h2, .title classes. */
-/* 
-  UNCOMMENT this block if you have placed BeautifulDream.woff2 / .woff into src/assets/fonts.
-  See README.md "Title Font" instructions.
+/* ---- CURSIVE TITLE FONT FOR TITLES ----
+   We use 'Dancing Script' from Google Fonts if available,
+   otherwise fall back to 'Pacifico', then generic 'cursive'.
+   See README for Beautiful Dream self-hosting if you want that font!
 
-@font-face {
-  font-family: 'Beautiful Dream';
-  src: url('./assets/fonts/BeautifulDream.woff2') format('woff2'),
-       url('./assets/fonts/BeautifulDream.woff') format('woff');
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-}
+   You can change 'Dancing Script' here if other fonts are preferred.
 */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap'); /* Fallback alternative */
 
-/* Beautiful Dream font import (webfont for titles) */
-@import url('https://fonts.googleapis.com/css2?family=Beautiful+Dream&display=swap');
+/* Remove Beautiful Dream webfont import, as it's unavailable on Google Fonts */
 
 /* Marvelous Font Duo @font-face example for project self-hosting (if files are available):
 @font-face {
@@ -68,11 +62,11 @@ body {
 }
 
 /* Key typographic classes using Marvelous Font Duo */
-/* Typography: "Beautiful Dream" font for all h1, h2, and .title classes. Others keep Marvelous Font Duo */
+/* Typography: Use "Dancing Script" for all h1, h2, and .title classes. Others keep Marvelous Font Duo */
 h1,
 h2,
 .title {
-  font-family: 'Beautiful Dream', cursive, system-ui, Arial, Helvetica, sans-serif !important;
+  font-family: 'Dancing Script', 'Pacifico', cursive, system-ui, Arial, Helvetica, sans-serif !important;
 }
 
 .title,
