@@ -53,6 +53,13 @@ body {
 }
 
 /* Key typographic classes using Marvelous Font Duo */
+/* Typography: "Beautiful Dream" font for all h1, h2, and .title classes. Others keep Marvelous Font Duo */
+h1,
+h2,
+.title {
+  font-family: 'Beautiful Dream', cursive, system-ui, Arial, Helvetica, sans-serif !important;
+}
+
 .title,
 .subtitle,
 .description,
