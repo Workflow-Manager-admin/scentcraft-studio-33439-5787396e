@@ -39,20 +39,21 @@ function ScentSelectionStep({ scentOptions, selectedScents, onChange, onNext }) 
           margin-bottom: 8px;
         }
         .scent-chip {
-          background: #fff;
-          color: #bfa16c;
-          border: 2px solid #bfa16c;
+          background: #182a4e;
+          color: var(--floral-accent);
+          border: 2px solid var(--floral-accent);
           border-radius: 20px;
           padding: 8px 18px;
           font-size: 1rem;
           font-weight: 500;
           cursor: pointer;
           user-select: none;
-          transition: background 0.2s, color 0.2s;
+          transition: background 0.25s, color 0.18s;
         }
         .scent-chip.selected {
-          background: #bfa16c;
+          background: var(--floral-accent);
           color: #fff;
+          box-shadow: 0 0 0 3px #d9a8bc33;
         }
         .btn[disabled] {
           opacity: 0.6;
