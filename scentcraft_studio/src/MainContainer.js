@@ -166,6 +166,17 @@ function MainContainer() {
       );
       break;
     case 3:
+      // ReviewBox is now Step 3 (index 3)
+      stepContent = (
+        <ReviewBox
+          review={reviewText}
+          onReviewChange={handleReviewChange}
+          onSubmit={handleReviewSubmit}
+          submitted={reviewSubmitted}
+        />
+      );
+      break;
+    case 4:
       stepContent = (
         <PreviewAndOrderStep
           summary={previewSummary}
