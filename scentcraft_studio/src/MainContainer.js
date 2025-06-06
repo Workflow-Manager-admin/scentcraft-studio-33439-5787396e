@@ -60,6 +60,10 @@ function MainContainer() {
   const [selectedPackaging, setSelectedPackaging] = useState("");
   const [packagingMessage, setPackagingMessage] = useState("");
 
+  // New: Review feedback state
+  const [reviewText, setReviewText] = useState("");
+  const [reviewSubmitted, setReviewSubmitted] = useState(false);
+
   // Handlers for steps
   const handleScentChange = (val) => {
     setSelectedScents((prev) =>
@@ -70,13 +74,26 @@ function MainContainer() {
         : prev
     );
   };
-  const handleNext = () => setCurrentStep((prev) => Math.min(prev + 1, 3));
+  const handleNext = () => setCurrentStep((prev) => Math.min(prev + 1, 4));
   const handlePrev = () => setCurrentStep((prev) => Math.max(prev - 1, 0));
   const handleShapeChange = (val) => setSelectedShape(val);
   const handleColorChange = (val) => setSelectedColor(val);
   const handleLabelChange = (val) => setBottleLabel(val);
   const handlePackagingChange = (val) => setSelectedPackaging(val);
   const handleMessageChange = (val) => setPackagingMessage(val);
+
+  // Review step logic
+  const handleReviewChange = (val) => {
+    setReviewText(val);
+    if (reviewSubmitted) setReviewSubmitted(false);
+  };
+  const handleReviewSubmit = (val) => {
+    setReviewText(val);
+    setReviewSubmitted(true);
+    // Remain on review step: next button in box is disabled after submit
+    // Optionally, could auto-advance on submit
+    setTimeout(() => setReviewSubmitted(false), 2300);
+  };
 
   // For order: reset or show confirmation etc.
   const handleOrder = () => {
@@ -89,6 +106,8 @@ function MainContainer() {
       setBottleLabel("");
       setSelectedPackaging("");
       setPackagingMessage("");
+      setReviewText("");
+      setReviewSubmitted(false);
     }, 1200);
   };
 
