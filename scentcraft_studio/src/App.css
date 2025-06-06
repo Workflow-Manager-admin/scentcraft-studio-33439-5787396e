@@ -1,14 +1,15 @@
 :root {
   --dark-blue-bg: #112040;         /* Main background */
   --dark-blue-bg-deeper: #0d172b;  /* For containers/panels */
-  --floral-accent: #bc8f8f;        /* Floral accent color, muted rose */
+  --accent-green: #67ea68;         /* Light green accent for buttons, highlights */
+  --accent-green-soft: #b0ffe0;    /* Softer green for backgrounds or secondary accents */
   --base-light: #f8f4f0;
-  --accent: #f9d6e2;               /* Soft accent (light pink) */
   --text-color: #e8edfc;
   --text-strong: #fafaff;          /* High contrast text */
-  --text-secondary: #a6bde4;
-  --border-color: #395480;
+  --text-secondary: #a6e4b0;
+  --border-color: #5bf2ae;
   --nav-bg: #16284d;
+  --floral-accent: #338068;  /* Harmonized floral accent (muted green) */
 }
 
 /* --- Floral SVG pattern as body background using inline SVG data URI --- */
