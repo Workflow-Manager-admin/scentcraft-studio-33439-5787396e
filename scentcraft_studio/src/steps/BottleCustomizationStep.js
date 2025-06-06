@@ -109,7 +109,7 @@ function BottleCustomizationStep({
         }
         .bottle-chip {
           background: #1b2741;
-          color: var(--floral-accent);
+          color: #fff;
           border: 2px solid var(--floral-accent);
           border-radius: 16px;
           padding: 8px 16px;
@@ -130,7 +130,7 @@ function BottleCustomizationStep({
         }
         .input {
           background: #151e36;
-          color: var(--floral-accent);
+          color: #fff;
           border: 1.5px solid var(--floral-accent);
           border-radius: 5px;
         }
