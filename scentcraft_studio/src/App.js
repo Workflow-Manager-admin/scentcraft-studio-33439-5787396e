@@ -9,7 +9,7 @@ function App() {
         <div className="container">
           <div className="navbar-flex" style={{ display: 'flex', justifyContent: 'space-between', width: '100%' }}>
             <div className="logo">
-              <span className="logo-symbol">✽</span> ScentCraft Studio
+              <span className="logo-symbol">✽</span> <span className="sc-logo-title">ScentCraft Studio</span>
             </div>
             <button className="btn">My Account</button>
           </div>
@@ -20,7 +20,7 @@ function App() {
         <div className="hero">
           <div className="container">
             <div className="subtitle">Create Your Luxury Perfume</div>
-            <h1 className="title">ScentCraft Studio</h1>
+            <h1 className="title sc-logo-title">ScentCraft Studio</h1>
             <div className="description">
               Personalize your scent, bottle, and packaging. Experience bespoke fragrance artistry.
             </div>
