@@ -3,13 +3,16 @@ import Stepper from "./steps/Stepper";
 import ScentSelectionStep from "./steps/ScentSelectionStep";
 import BottleCustomizationStep from "./steps/BottleCustomizationStep";
 import PackagingOptionsStep from "./steps/PackagingOptionsStep";
+import ReviewBox from "./steps/ReviewBox";
 import PreviewAndOrderStep from "./steps/PreviewAndOrderStep";
 
 // Step definitions and options
+// * Added Review step after Packaging
 const STEPS = [
   { label: "Scent Selection" },
   { label: "Bottle Customization" },
   { label: "Packaging" },
+  { label: "Review Experience" },
   { label: "Preview & Order" }
 ];
 
