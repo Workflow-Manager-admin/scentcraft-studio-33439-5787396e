@@ -130,8 +130,8 @@ body {
 }
 
 .btn {
-  background: var(--floral-accent);
-  color: #fff;
+  background: var(--accent-green);
+  color: #051d0a;
   border: none;
   border-radius: 4px;
   padding: 10px 20px;
@@ -139,14 +139,16 @@ body {
   font-weight: 600;
   cursor: pointer;
   letter-spacing: 0.1px;
-  transition: background 0.2s, box-shadow 0.18s;
+  transition: background 0.15s, box-shadow 0.15s, color 0.14s;
   box-shadow: 0 2px 10px 0 #0c121f1c;
+  border: 1.5px solid var(--accent-green-soft);
 }
 
 .btn:hover,
 .btn:focus {
-  background: #d797b3;
-  box-shadow: 0 4px 18px 0 #bc8f8f28;
+  background: #b0ffe0;
+  color: #123d18;
+  box-shadow: 0 4px 18px 0 #4bee8d38;
 }
 
 .btn-large {
@@ -157,4 +159,6 @@ body {
 .btn[disabled] {
   opacity: 0.6;
   pointer-events: none;
+  background: #27614499;
+  color: #bbbbbb;
 }
