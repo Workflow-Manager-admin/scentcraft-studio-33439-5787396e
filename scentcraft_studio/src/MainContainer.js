@@ -158,22 +158,45 @@ function MainContainer() {
 
   return (
     <section>
-      <div className="container">
+      <div className="container main-panel-container">
         <Stepper steps={STEPS} currentStep={currentStep} />
-        <div
-          style={{
-            background: "#fff",
-            borderRadius: 16,
-            maxWidth: 600,
-            margin: "0 auto",
-            padding: "38px 34px",
-            boxShadow: "0 3px 32px rgba(191,161,108,0.08)",
-            color: "#bfa16c"
-          }}
-        >
+        <div className="main-step-panel floral-overlay">
           {stepContent}
         </div>
       </div>
+      {/* floral SVG overlay at the corner */}
+      <style>{`
+        .main-panel-container {
+          position: relative;
+        }
+        .main-step-panel {
+          background: linear-gradient(120deg, #16284dbb 84%, #234477e8 100%);
+          border-radius: 18px;
+          max-width: 630px;
+          margin: 0 auto;
+          padding: 42px 34px 36px 34px;
+          box-shadow: 0 6px 36px #0b142838, 0 1.5px 0px #27345b55;
+          color: var(--text-color);
+          border: 1.5px solid #39548044;
+          position: relative;
+          overflow: hidden;
+        }
+        /* Subtle floral SVG at bottom right for panel, low opacity */
+        .main-step-panel.floral-overlay::after {
+          content: "";
+          pointer-events: none;
+          position: absolute;
+          right: -32px;
+          bottom: -20px;
+          width: 170px;
+          height: 120px;
+          background: url("data:image/svg+xml,%3Csvg width='170' height='120' viewBox='0 0 170 120' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cellipse cx='80' cy='58' rx='75' ry='45' fill='%23bc8f8f17'/%3E%3Cellipse cx='130' cy='100' rx='30' ry='14' fill='%23f9d6e21f'/%3E%3Cellipse cx='27' cy='22' rx='22' ry='10' fill='%23f9d6e224'/%3E%3C/svg%3E");
+          background-size: contain;
+          background-repeat: no-repeat;
+          opacity: 0.34;
+          z-index: 0;
+        }
+      `}</style>
     </section>
   );
 }
