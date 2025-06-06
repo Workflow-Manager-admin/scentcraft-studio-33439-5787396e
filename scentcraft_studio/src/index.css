@@ -9,6 +9,7 @@ body {
   font-family: 'Marvelous Font Duo', system-ui, Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  /* REMOVE background or color properties here to ensure App.css styles take effect */
 }
 
 code {
