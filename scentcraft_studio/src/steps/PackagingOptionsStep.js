@@ -47,7 +47,8 @@ function PackagingOptionsStep({
             borderRadius: 5,
             padding: "8px 12px",
             fontSize: "1rem",
-            color: "#bfa16c",
+            color: "#fff",
+            background: "#162347",
             fontFamily: "inherit",
           }}
         />
