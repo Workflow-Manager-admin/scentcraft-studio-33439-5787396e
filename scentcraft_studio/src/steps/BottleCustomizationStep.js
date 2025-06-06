@@ -85,8 +85,8 @@ function BottleCustomizationStep({
             outline: "none",
             fontSize: "1rem",
             minWidth: 200,
-            color: "#bfa16c",
-            background: "#fff",
+            color: "#fff",
+            background: "#1b2741",
             marginRight: 12,
           }}
           placeholder="e.g. Rose Dream"
