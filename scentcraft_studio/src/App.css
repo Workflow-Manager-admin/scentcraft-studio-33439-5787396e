@@ -82,7 +82,7 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 24px;
-  background: linear-gradient(100deg, #16284d 0%, #112040 55%, #142040 100%);
+  background: linear-gradient(100deg, #153653 0%, #101e33 55%, #134d2e 100%);
   /* Overlay subtle floral pattern lower opacity */
   position: relative;
 }
@@ -91,7 +91,7 @@ body {
   content: '';
   position: absolute;
   top: -24px; left: 0; right: 0; bottom: 0;
-  background-image: url("data:image/svg+xml,%3Csvg width='240' height='110' viewBox='0 0 240 110' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cellipse cx='120' cy='46' rx='85' ry='41' fill='%23f9d6e210'/%3E%3Cellipse cx='186' cy='104' rx='42' ry='15' fill='%23bc8f8f11'/%3E%3Cellipse cx='35' cy='13' rx='27' ry='7' fill='%23f9d6e230'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg width='240' height='110' viewBox='0 0 240 110' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cellipse cx='120' cy='46' rx='85' ry='41' fill='%2367ea6810'/%3E%3Cellipse cx='186' cy='104' rx='42' ry='15' fill='%23b0ffe011'/%3E%3Cellipse cx='35' cy='13' rx='27' ry='7' fill='%2367ea6830'/%3E%3C/svg%3E");
   background-repeat: repeat-x;
   background-size: contain;
   opacity: 0.38;
@@ -105,7 +105,7 @@ body {
 }
 
 .subtitle {
-  color: var(--accent);
+  color: var(--accent-green);
   font-weight: 500;
   font-size: 1.1rem;
   letter-spacing: 0.5px;
