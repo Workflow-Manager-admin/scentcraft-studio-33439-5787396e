@@ -108,24 +108,31 @@ function BottleCustomizationStep({
           gap: 10px;
         }
         .bottle-chip {
-          background: #fff;
-          color: #bfa16c;
-          border: 2px solid #bfa16c;
+          background: #1b2741;
+          color: var(--floral-accent);
+          border: 2px solid var(--floral-accent);
           border-radius: 16px;
           padding: 8px 16px;
           font-size: 1rem;
           font-weight: 500;
           cursor: pointer;
           user-select: none;
-          transition: background 0.2s, color 0.2s;
+          transition: background 0.22s, color 0.18s, border 0.14s;
         }
         .bottle-chip.selected {
-          background: #bfa16c;
+          background: var(--floral-accent);
           color: #fff;
+          box-shadow: 0 0 0 3px #dfafc633;
         }
         .btn[disabled] {
           opacity: 0.6;
           pointer-events: none;
+        }
+        .input {
+          background: #151e36;
+          color: var(--floral-accent);
+          border: 1.5px solid var(--floral-accent);
+          border-radius: 5px;
         }
       `}</style>
     </div>
