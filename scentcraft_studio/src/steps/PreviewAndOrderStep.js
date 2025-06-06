@@ -47,23 +47,25 @@ function PreviewAndOrderStep({
 
       <style>{`
         .summary-box {
-          background: #f8f4f0;
-          color: #bfa16c;
-          border: 2px solid #bfa16c;
+          background: #151e2c;
+          color: var(--floral-accent);
+          border: 2px solid var(--floral-accent);
           border-radius: 12px;
           padding: 22px 26px;
           margin-bottom: 16px;
           font-size: 1.08rem;
+          box-shadow: 0 1.5px 17px 0 #0d203415;
         }
         .tag {
           display: inline-block;
-          background: #bfa16c;
+          background: var(--floral-accent);
           color: #fff;
           border-radius: 10px;
           padding: 3px 10px;
           font-size: 0.98rem;
           margin: 0 4px 4px 0;
-          border: 1px solid #bfa16c;
+          border: 1px solid var(--floral-accent);
+          box-shadow: 0 1px 4px #ddc0ea18;
         }
       `}</style>
     </div>

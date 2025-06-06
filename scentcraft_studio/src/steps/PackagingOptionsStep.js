@@ -66,24 +66,31 @@ function PackagingOptionsStep({
           flex-wrap: wrap;
         }
         .packaging-chip {
-          background: #fff;
-          color: #bfa16c;
-          border: 2px solid #bfa16c;
+          background: #162347;
+          color: var(--floral-accent);
+          border: 2px solid var(--floral-accent);
           border-radius: 16px;
           padding: 9px 20px;
           font-size: 1rem;
           font-weight: 500;
           cursor: pointer;
           user-select: none;
-          transition: background-color 0.3s, color 0.3s;
+          transition: background 0.22s, color 0.16s;
         }
         .packaging-chip.selected {
-          background: #bfa16c;
+          background: var(--floral-accent);
           color: #fff;
+          box-shadow: 0 0 0 3px #dfafc633;
         }
         .btn[disabled] {
           opacity: 0.6;
           pointer-events: none;
+        }
+        .input {
+          background: #151e36;
+          color: var(--floral-accent);
+          border: 1.5px solid var(--floral-accent);
+          border-radius: 5px;
         }
       `}</style>
     </div>
