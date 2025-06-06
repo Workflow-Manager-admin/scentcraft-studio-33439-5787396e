@@ -68,7 +68,7 @@ function PackagingOptionsStep({
         }
         .packaging-chip {
           background: #162347;
-          color: var(--floral-accent);
+          color: #fff;
           border: 2px solid var(--floral-accent);
           border-radius: 16px;
           padding: 9px 20px;
