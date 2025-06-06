@@ -16,6 +16,9 @@
 /* Marvelous Font Duo import (via Bunny Fonts CDN, which provides both script and sans components) */
 @import url('https://fonts.googleapis.com/css2?family=Marvelous+Font+Duo:ital,wght@0,400;1,400&display=swap');
 
+/* Beautiful Dream font import (webfont for titles) */
+@import url('https://fonts.googleapis.com/css2?family=Beautiful+Dream&display=swap');
+
 /* Marvelous Font Duo @font-face example for project self-hosting (if files are available):
 @font-face {
   font-family: 'Marvelous Font Duo';
