@@ -13,9 +13,32 @@
 }
 
 /* --- Floral SVG pattern as body background using inline SVG data URI --- */
+/* Marvelous Font Duo import (via Bunny Fonts CDN, which provides both script and sans components) */
+@import url('https://fonts.googleapis.com/css2?family=Marvelous+Font+Duo:ital,wght@0,400;1,400&display=swap');
+
+/* Marvelous Font Duo @font-face example for project self-hosting (if files are available):
+@font-face {
+  font-family: 'Marvelous Font Duo';
+  src: url('/assets/fonts/MarvelousFontDuo-Regular.woff2') format('woff2'),
+       url('/assets/fonts/MarvelousFontDuo-Regular.woff') format('woff');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Marvelous Font Duo';
+  src: url('/assets/fonts/MarvelousFontDuo-Script.woff2') format('woff2'),
+       url('/assets/fonts/MarvelousFontDuo-Script.woff') format('woff');
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+}
+*/
+
+/* Use the 'Marvelous Font Duo', fall back to system-ui, Arial, Helvetica, sans-serif */
 body {
   margin: 0;
-  font-family: 'Inter', 'Roboto', 'Helvetica', 'Arial', sans-serif;
+  font-family: 'Marvelous Font Duo', system-ui, Arial, Helvetica, sans-serif;
   background-color: var(--dark-blue-bg);
   color: var(--text-color);
   -webkit-font-smoothing: antialiased;
@@ -25,6 +48,32 @@ body {
   background-size: 320px 320px;
   background-repeat: repeat;
 }
+
+/* Key typographic classes using Marvelous Font Duo */
+.title,
+.subtitle,
+.description,
+.logo,
+.logo-symbol,
+.btn,
+input,
+textarea,
+select,
+.step-label,
+.stepper,
+.bottle-chip,
+.packaging-chip,
+.scent-chip,
+.summary-box,
+.tag {
+  font-family: 'Marvelous Font Duo', system-ui, Arial, Helvetica, sans-serif !important;
+}
+
+code, pre, .code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+/* Remove font-family from .logo-symbol serif, use Marvelous for all */
 
 .app {
   min-height: 100vh;
